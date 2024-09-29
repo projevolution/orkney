@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7fd1cbaa94.js" crossorigin="anonymous"></script>
+
+    <script>
+        function developNavClick(){
+            document.getElementById("mainNav").style.display="none";
+            document.getElementById("developerNav").style.display="block"
+            document.getElementById("orkneyNav").style.display="none"
+        }
+        function orkneyNavClick(){
+            document.getElementById("mainNav").style.display="none";
+            document.getElementById("developerNav").style.display="none"
+            document.getElementById("orkneyNav").style.display="block"
+        }
+        function closeSubNavs(){
+            document.getElementById("mainNav").style.display="block";
+            document.getElementById("developerNav").style.display="none"
+            document.getElementById("orkneyNav").style.display="none"
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="#" onclick="developNavClick()">Developer...</a></li>
+            <li><a href="#" onclick="orkneyNavClick()">Orkney...</a></li>
+            <li><a href="https://projectevolution.notion.site/Evolution-Orkney-c82264ab0a5742419ce0ffa887fde0ac">Help <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+        <ul id="developerNav">
+            <li><a href="#" onclick="closeSubNavs()">X</a></li>
+            <li><a href="bug.html">Report a Bug</a></li>
+            <li><a href="developer.html">Become a Developer</a></li>
+        </ul>
+        <ul id="orkneyNav">
+            <li><a href="#" onclick="closeSubNavs()">X</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="download.html">Get Orkney</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h1>Blog</h1>
+                <p>Stay up to date with the Project Evolution team.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                
+                <h2>March 2023</h2><br>
+
+                <section class="blogItem">
+                    <h3>New Website</h3>
+                    <h4>Unconfirmed @ 00:00</h4><br>
+                    <p>To continue developing the identity of Project Evolution, we have decided to move away from third pary resources as building our own website will give us more freedom and flexibility with layouts, content and styling which will allow us to create a more seemless design.</p><br>
+                    <p>This website is made possible by the open source CSS resource <a href="https://open-props.style/" target="_blank">Open-Props</a>. This resource provides powerful, consistent and modern styles extremely easy and adaptive to your device's theme.</p>
+                    <p>Along with this redesign, a more modern set of WebApp templates will be developed and released to allow for a more consistent experience.</p><br>
+                    <p>Please note that the development of this site may take some time as it is a large project to develop. Thank you for your patience!</p>
+                </section>
+
+            </div><br>
+            
+            <div class="container">
+                <p>For older posts please visit the <a href="https://sites.google.com/view/evolutionorkney/blog" target="_blank">Old Project Evolution Site</a>.</p>
+            </div><br>
+        </section>
+
+</body>
+</html>

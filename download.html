@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Orkney</title>
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7fd1cbaa94.js" crossorigin="anonymous"></script>
+
+    <script>
+        function developNavClick(){
+            document.getElementById("mainNav").style.display="none";
+            document.getElementById("developerNav").style.display="block"
+            document.getElementById("orkneyNav").style.display="none"
+        }
+        function orkneyNavClick(){
+            document.getElementById("mainNav").style.display="none";
+            document.getElementById("developerNav").style.display="none"
+            document.getElementById("orkneyNav").style.display="block"
+        }
+        function closeSubNavs(){
+            document.getElementById("mainNav").style.display="block";
+            document.getElementById("developerNav").style.display="none"
+            document.getElementById("orkneyNav").style.display="none"
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="#" onclick="developNavClick()">Developer...</a></li>
+            <li><a href="#" onclick="orkneyNavClick()">Orkney...</a></li>
+            <li><a href="https://projectevolution.notion.site/Evolution-Orkney-c82264ab0a5742419ce0ffa887fde0ac">Help <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+        <ul id="developerNav">
+            <li><a href="#" onclick="closeSubNavs()">X</a></li>
+            <li><a href="bug.html">Report a Bug</a></li>
+            <li><a href="developer.html">Become a Developer</a></li>
+        </ul>
+        <ul id="orkneyNav">
+            <li><a href="#" onclick="closeSubNavs()">X</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="download.html">Get Orkney</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h1>Get Orkney</h1>
+                <p>You're one step away from your tomorrow.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Download</h2><br>
+
+                <details open>
+                    <summary>System Requirements</summary>
+                    <ul>
+                        <li>2GB RAM</li>
+                        <li>2GB Available Storage (4GB Recommened for WebApps and documents)</li>
+                    </ul>
+                </details><br>
+
+                <details open>
+                    <summary>Download</summary>
+                    <ul>
+                        <li>Email us at <a href="mailto:desktop.extenion.evolution@gmail.com">desktop.extenion.evolution@gmail.com</a> and add the following:</li>
+                        <ul>
+                            <li>A subject of "Orkney Download"</li>
+                            <li>Your name</li>
+                        </ul>
+                        <li>We will respond to your email and provide you with the Evolution Orkney files, download these from the email client</li>
+                    </ul>
+                </details>
+            </div><br>
+
+            <div class="container">
+                <h2>Install</h2><br>
+                For step-by-step installation instructions please visit our Notion page by clicking <a href="https://projectevolution.notion.site/Set-Up-Guide-b2f7a80963924a02924765cb36a12cef">here</a> or by clicking "Help" in the navigation menu.
+            </div><br>
+        </section>
+
+</body>
+</html>
